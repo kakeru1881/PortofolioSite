@@ -1,22 +1,22 @@
 import styled from 'styled-components';
-import backgroundDesk from './img/background-header.jpg'
+// import backgroundDesk from './img/background-header.jpg'
 import { HomeHeader } from '../organisms/home/HomeHeader';
 import { HomeContact } from '../organisms/home/HomeContact';
 import { HomeContents } from '../organisms/home/HomeContents';
 
 const menus = [
   {
-    type: "right",
+    // type: "right",
     title:"History",
     url:"/history",
   },
   {
-    type: "left",
-    title:"Personality",
-    url:"/personality",
+    // type: "left",
+    title:"Skill",
+    url:"/skill",
   },
   {
-    type: "right",
+    // type: "right",
     title:"Products",
     url:"/products",
   },
@@ -31,11 +31,10 @@ export const Home = () => {
      <HomeHeader></HomeHeader>
      {/* メイン */}
       <SMainContainer>
-        <SHeaderImg src={backgroundDesk}/>
+        {/* <SHeaderImg src={backgroundDesk}/> */}
         {/* 各ページへのリンクコンテナ */}
         <HomeContents menus={menus}></HomeContents>
-        {/* CONTACT */}
-        <HomeContact></HomeContact>
+
       </SMainContainer>
     </>
   );

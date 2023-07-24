@@ -1,6 +1,6 @@
 body {
   color: #323030;
-  background: linear-gradient(#ffffff, #201c09);
+  background: linear-gradient(#fff, #fff);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -27,8 +27,8 @@ code {
 }
 
 .gold {
-  color: #bea76f;
+  color: #ffffff;
 }
 .white {
-  color: #443838;
+  color: #ffffff;
 }

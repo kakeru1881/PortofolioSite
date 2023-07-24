@@ -9,7 +9,8 @@ export const HomeHeader = () => {
     <>
       <SContainer>
         <Stitle>Who we are</Stitle>
-        <SContent>商品やサービスを周知するために必要なランディングページ（LP）作成を承ります。各店舗の需要予測と利益の最大化を目的とした施策なら何なりとお申し付けください。</SContent>
+        <SContent>
+          商品やサービスを周知するために必要なランディングページ（LP）作成を承ります。各店舗の需要予測と利益の最大化を目的とした施策なら何なりとお申し付けください。</SContent>
         <LinkButton url="/skill">提供サービス</LinkButton>
       </SContainer>
     </>
@@ -30,7 +31,9 @@ const SContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-`
+  filter: sepia(30%);
+  `
+
 const Stitle = styled.h1`
   font-family: 'Noto Serif',serif;
   font-weight: 400;
@@ -48,11 +51,16 @@ const SComment = styled.p`
 `
 
 const SContent = styled.p`
-  margin: 30px auto 0 auto;
+  margin: 10px auto 0 auto;
   font-size: 13px;
   letter-spacing: .05em;
   line-height: 24px;
   color: #fff;
   width: 90%;
   max-width: 500px;
+  
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333333; 
+  background-color: #555;
 `

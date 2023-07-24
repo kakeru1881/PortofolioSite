@@ -20,7 +20,7 @@ export const Header = (props) => {
               <SLink to="/" onClick={() => setShowMenu(false)}>Top</SLink>
               <SLink to="/skill" onClick={() => setShowMenu(false)}>Skill</SLink>
               <SLink to="/history" onClick={() => setShowMenu(false)}>History</SLink>
-              <SLink to="/personality" onClick={() => setShowMenu(false)}>Personality</SLink>
+              {/* <SLink to="/personality" onClick={() => setShowMenu(false)}>Personality</SLink> */}
               <SLink to="/products" onClick={() => setShowMenu(false)}>Puroducts</SLink>
               <SLink to="/contact" onClick={() => setShowMenu(false)}>Contact</SLink>
             </SUl>
@@ -39,7 +39,7 @@ export const Header = (props) => {
 }
 const SLogoTitle = styled.h1`
   margin: 0 auto;
-  color: #bea76f;
+  color: #000000;
   line-height: 1;
   font-family: cursive;
   font-weight: 400;
@@ -53,7 +53,7 @@ const SNav = styled.nav`
   position: absolute;
   top: 90px;
   width: 100%;
-  background: #000;
+  background: #555;
   ${media.lessThan("small")`
     height: auto;
   `}
@@ -70,7 +70,7 @@ const SUl = styled.ul`
 `
 
 const SLink = styled(Link)`
-  color: #bea76f;
+  color: #fff;
   padding: 20px 25px;
   text-decoration: none;
   &:hover{
