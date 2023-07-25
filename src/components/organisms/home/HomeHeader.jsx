@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from "styled-components";
 import backgroundPc from '../../pages/img/background-pc.jpg'
-import { LinkButton } from '../../atoms/button/LinkButton';
 
 export const HomeHeader = () => {
 
@@ -11,7 +10,6 @@ export const HomeHeader = () => {
         <Stitle>Who we are</Stitle>
         <SContent>
           商品やサービスを周知するために必要なランディングページ（LP）作成を承ります。各店舗の需要予測と利益の最大化を目的とした施策なら何なりとお申し付けください。</SContent>
-        <LinkButton url="/skill">提供サービス</LinkButton>
       </SContainer>
     </>
   );

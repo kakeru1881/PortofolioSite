@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import media from "styled-media-query";
 import { SkilCards } from '../organisms/skill/SkillCards';
-import backgroundHeader from './img/background-header-about.jpg'
+import backgroundHeader from './img/background-header-skill.jpg'
 
 const skills = [
   {
@@ -31,7 +31,7 @@ export const Skill = () => {
       <SContentContainer>
         <SHeader>
           <STitleContainer>
-            <STitle>Work</STitle>
+            <STitle>Skill</STitle>
             <SContent>[ LP作成, SEO対策, 業務システム開発, DX支援 ]</SContent>
           </STitleContainer>
         </SHeader>
@@ -72,7 +72,7 @@ const SHeader = styled.div`
   align-items: center;
   justify-content: center;
   ::before {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.2);
     position: absolute;
     top: 0;
     right: 0;

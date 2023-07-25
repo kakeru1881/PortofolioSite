@@ -3,45 +3,21 @@ import media from "styled-media-query";
 import { HistoryCard } from "../organisms/history/HistoryCard";
 
 const step = [{
-    title: '独学開始',
-    startDate: '2020/9',
-    content:`プログラミングの勉強を始めました。ProgateでHTML, CSS, Ruby, JavaSctiptの基礎のきを学びました。ドットインストールとかもやってました。`,
-  },
-  {
-    title: 'Ruby on Railsの勉強開始',
-    startDate: '2020/10',
-    content:`Railsチュートリアルを活用してRuby on Railsを本格的に勉強し始めました。`,
-  },
-  {
-    title: 'JavaScriptの勉強開始',
-    startDate: '2021/12',
-    content:`動きのある画面を作ってみたくてJavaScriptの勉強をし始めました。`,
-  },
-  {
-    title: '101ワードの作成',
-    startDate: '2021/1',
-    content:`自己分析の一環として「自分を構成する101のワード」を作成し始めました。`,
-  },
-  {
-    title: '都内のIT企業で勤務開始',
-    startDate: '2021/3',
-    content:`フロントエンドエンジニアとして働き始めました。`,
-  },
-  {
-    title: 'jQueryの勉強開始',
+    title: 'システム開発',
     startDate: '2021/4',
-    content:`仕事に必要だったため、jQueryの勉強を始めました。`,
+  content:` 大規模金融システムの開発`,
   },
   {
-    title: 'NEXT.jsの勉強開始',
-    startDate: '2021/6',
-    content:`SPAな技術に触れてみたくて、NEXT.jsの勉強を始めました。`,
+    title: 'サーバーセキュリティ',
+    startDate: '2022/2',
+    content:`Cloud Security (CSPM)構築/導入/運用、EDR構築/導入/運用脆弱性診断。`,
   },
   {
-    title: 'React.jsの勉強開始',
-    startDate: '2021/9',
-    content:`React.jsの勉強を開始しました。`,
+    title: 'Web制作',
+    startDate: '2023/8',
+    content:`企画制作及びインターネットマーケティング、LP作成/運用。`,
   },
+ 
 ]
 
 export const History = () => {

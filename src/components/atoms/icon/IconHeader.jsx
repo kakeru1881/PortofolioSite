@@ -6,17 +6,15 @@ export const IconHeader = () => {
   return (
     <>
       <SIcons>
-        <SIconLink><a href='https://twitter.com/chiuney6_'target='_blank' rel="noreferrer"><i className="fab fa-twitter gold fa-lg"></i></a></SIconLink>
-        <SIconLink><a href='https://github.com/chiuney'target='_blank' rel="noreferrer"><i className="fab fa-github gold fa-lg"></i></a></SIconLink>
-        <SQiita href='https://qiita.com/chiuney'target='_blank' rel="noreferrer">
-        </SQiita>
+        <SIconLink><a href='https://twitter.com/kishida230'target='_blank' rel="noreferrer"><i className="fab fa-twitter gold fa-lg"></i></a></SIconLink>
+        <SIconLink><a href='https://github.com/kakeru1881' target='_blank' rel="noreferrer"><i className="fab fa-github gold fa-lg"></i></a></SIconLink>
       </SIcons>
     </>
   );
 }
 
 const SQiita = styled(SA)`
-  background: #bea76f;
+  background: #000000;
   ${media.lessThan("medium")`
     margin: 6px 0 0 0px;
   `}

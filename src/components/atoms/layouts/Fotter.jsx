@@ -13,7 +13,6 @@ export const Fotter = () => {
               <SLink to="/">Top</SLink>
               <SLink to="/skill">Business</SLink>
               <SLink to="/history">History</SLink>
-              {/* <SLink to="/personality">Personality</SLink> */}
               <SLink to="/products">Puroducts</SLink>
               <SLink to="contact">Contact</SLink>
             </SUl>

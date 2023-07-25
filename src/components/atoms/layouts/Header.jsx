@@ -20,7 +20,6 @@ export const Header = (props) => {
               <SLink to="/" onClick={() => setShowMenu(false)}>Top</SLink>
               <SLink to="/skill" onClick={() => setShowMenu(false)}>Skill</SLink>
               <SLink to="/history" onClick={() => setShowMenu(false)}>History</SLink>
-              {/* <SLink to="/personality" onClick={() => setShowMenu(false)}>Personality</SLink> */}
               <SLink to="/products" onClick={() => setShowMenu(false)}>Puroducts</SLink>
               <SLink to="/contact" onClick={() => setShowMenu(false)}>Contact</SLink>
             </SUl>
@@ -99,7 +98,7 @@ const SLines = styled.span`
 
   width: 25px;
   height: 3px;
-  background: #bea76f;
+  background: #000000;
   transition: 1s;
   border-radius: 4px;
 `

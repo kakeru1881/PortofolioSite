@@ -26,7 +26,7 @@ export const HistoryCard = (props) => {
 }
 
 const SContainer = styled.div`
-  color: #fff;
+  color: black;
   padding: 18px 0 18px 12px;
   margin: 24px 50px 0 32px;
   position: relative;

@@ -15,10 +15,12 @@ export const HomeContents = (props) => {
                 React.Children.toArray(menus.map((e) => (
                     // 条件分岐で１つ目２つ目とかで分けるか
                     <SContentsContainer>
+
                             <SContentTitle>{e.title}</SContentTitle>
                                 <LinkButton url={e.url}>VIEW MORE</LinkButton>
-   
+                            <SContentExplain>{e.explain}</SContentExplain>
                     </SContentsContainer>
+                    
                 )))
             }
         </>
@@ -27,60 +29,63 @@ export const HomeContents = (props) => {
 
 const SContentsContainer = styled.div`
   width: 500px;
-  height: auto;
-  min-height: 60vh;
-  max-height: 500px;
+  height: 300px;
+  min-height: 50%;
+  max-height: 100%;
+  max-width: 100%;
   margin: 100px auto;
   position: relative;
   background-size:  cover;
   background-repeat: no-repeat;
-  
+
  :nth-of-type(1) {
-  margin: 53px auto 0 10px;
+  margin: 10px auto 0 10px;
   background-image: url('${window.location.origin}/img/history.jpg');
-  filter: grayscale(70%);
-    :hover{
+  filter: grayscale(80%);
+      :hover{
         filter: blur();
-    }
+        
+    } 
  }
  :nth-of-type(2) {
-    margin: 50px auto 0 10px;
+    margin: 10px auto 0 10px;
   background-image: url('${window.location.origin}/img/skill.jpg');
-  filter: grayscale(70%); 
+  filter: grayscale(80%); 
       :hover{
         filter: blur();
     } 
  }
  :nth-of-type(3) {
-    margin: 50px auto 50px 10px;
+    margin: 50px auto 30px 10px;
   background-image: url('${window.location.origin}/img/product.jpg');
-  filter: grayscale(70%);
+  filter: grayscale(90%);
         :hover{
         filter: blur();
     } 
  }
+ 
 
 `
+
 
 
 // CONTENTS
-const SContents = styled.div`
-  width: 50%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: row;
-  ${media.lessThan("small")`
-    width: 100%;
-  `}
-`
+// const SContents = styled.div`
+//   width: 50%;
+//   height: 80%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: left;
+//   flex-direction: row;
+//   ${media.lessThan("small")`
+//     width: 100%;
+//   `}
+// `
 
 const SContentTitle = styled.p`
   color: #000000;
   font-size: 20px;
   margin: 18px auto 30% auto;
-  border: 1px solid #fff; 
   background-color: #fff;
 `
 
@@ -88,3 +93,21 @@ const SContentTitle = styled.p`
 //   width: 500px;
 //   height: auto;
 // `
+
+const SContentExplain = styled.p`
+  color:Black;
+  font-size: 15px;
+  position: absolute;
+  max-width: 100%;
+  text-align:left;
+	background: #eaf5f9;
+	padding: 1em;
+	margin-top: 0%;
+	box-shadow: 0 2px 3px #ccc;
+  transform: translate(110%, -110%) ;
+  ${SContentsContainer}:hover & {
+    color:white;
+    background:black;
+
+  }
+`
