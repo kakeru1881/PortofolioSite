@@ -97,6 +97,7 @@ ${media.lessThan("small")`
 const SContentTitle = styled.p`
   color: #000000;
   font-size: 20px;
+  font-family: 'Noto Serif',serif;
   margin: 18px auto 30% auto;
   background-color: #fff;
   ${media.lessThan("small")`
@@ -112,6 +113,8 @@ const SContentTitle = styled.p`
 const SContentExplain = styled.p`
   color:Black;
   font-size: 15px;
+  letter-spacing: .05em;
+  line-height: 24px;
   position: absolute;
   max-width: 100%;
   text-align:left;
@@ -125,9 +128,9 @@ const SContentExplain = styled.p`
     background:black;
   }
   ${media.lessThan("small")`
-    font-size: 10px;
-    width: auto;
-    height: aut;
+    width: 150px;
+    max-width: 500px;
+    font-size: 13px;
     transform: translate(100%, -160%) ;
   `}
 `
