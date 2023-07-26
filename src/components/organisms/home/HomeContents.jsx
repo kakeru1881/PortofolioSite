@@ -17,7 +17,9 @@ export const HomeContents = (props) => {
                     <SContentsContainer>
 
                             <SContentTitle>{e.title}</SContentTitle>
+                                <Button>
                                 <LinkButton url={e.url}>VIEW MORE</LinkButton>
+                                </Button>
                             <SContentExplain>{e.explain}</SContentExplain>
                     </SContentsContainer>
                     
@@ -69,6 +71,13 @@ const SContentsContainer = styled.div`
  
 
 `
+const Button = styled.div`
+${media.lessThan("small")`
+ transform: translate(50%, -50%) ;
+    width: 50%;
+    height: 50%;
+  `}
+`
 
 
 
@@ -117,8 +126,8 @@ const SContentExplain = styled.p`
   }
   ${media.lessThan("small")`
     font-size: 4px;
-    width: 200px;
-    height: auto%;
+    width: auto;
+    height: aut;
     transform: translate(110%, -110%) ;
   `}
 `
