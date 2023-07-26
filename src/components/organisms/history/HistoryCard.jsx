@@ -41,6 +41,11 @@ const SContainer = styled.div`
     position: absolute;
     bottom: 0;
   }
+  ${media.lessThan("small")`
+    font-size : 7px;
+    width: 50%;
+    height: 50%;
+  `}
 
   ${media.greaterThan("large")`
     max-width: 500px;

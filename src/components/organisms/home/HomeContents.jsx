@@ -37,14 +37,19 @@ const SContentsContainer = styled.div`
   position: relative;
   background-size:  cover;
   background-repeat: no-repeat;
-
+  
  :nth-of-type(1) {
   margin: 10px auto 0 10px;
   background-image: url('${window.location.origin}/img/history.jpg');
   filter: grayscale(80%);
+
+    ${media.lessThan("small")`
+    width: 50%;
+    height: 50%;
+    background-color:  red;
+  `}
       :hover{
         filter: blur();
-        
     } 
  }
  :nth-of-type(2) {
