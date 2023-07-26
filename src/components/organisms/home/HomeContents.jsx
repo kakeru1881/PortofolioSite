@@ -67,8 +67,11 @@ const SContentsContainer = styled.div`
         :hover{
         filter: blur();
     } 
+    ${media.lessThan("small")`
+    margin: 10px auto 10px 10px;
+  `}
  }
- 
+
 
 `
 const Button = styled.div`
@@ -113,8 +116,6 @@ const SContentTitle = styled.p`
 const SContentExplain = styled.p`
   color:Black;
   font-size: 15px;
-  letter-spacing: .05em;
-  line-height: 24px;
   position: absolute;
   max-width: 100%;
   text-align:left;
@@ -128,9 +129,9 @@ const SContentExplain = styled.p`
     background:black;
   }
   ${media.lessThan("small")`
-    width: 150px;
-    max-width: 500px;
-    font-size: 13px;
-    transform: translate(100%, -160%) ;
+    font-size: 10px;
+    min-width: 200px;
+    min-height: 60px;
+    transform: translate(60%, -105%) ;
   `}
 `
