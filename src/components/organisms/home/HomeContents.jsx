@@ -90,6 +90,9 @@ const SContentTitle = styled.p`
   font-size: 20px;
   margin: 18px auto 30% auto;
   background-color: #fff;
+  ${media.lessThan("small")`
+    font-size: 10px;
+  `}
 `
 
 // const SContentsImg = styled.img`
@@ -111,10 +114,11 @@ const SContentExplain = styled.p`
   ${SContentsContainer}:hover & {
     color:white;
     background:black;
-    ${media.lessThan("small")`
-    width: 50%;
-    height: 50%;
-    transform: translate(60%, -60%) ;
-  `}
   }
+  ${media.lessThan("small")`
+    font-size: 4px;
+    width: 200px;
+    height: auto%;
+    transform: translate(110%, -110%) ;
+  `}
 `

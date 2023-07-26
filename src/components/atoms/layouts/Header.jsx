@@ -55,7 +55,6 @@ const SNav = styled.nav`
   background: #555;
   ${media.lessThan("small")`
     height: auto;
-    width: auto;
   `}
 `
 
