@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { init, send } from 'emailjs-com';
-import axios from "axios";
 
 export const Contact = () => {
   const [fullName, setFullName] = useState('');
@@ -39,19 +38,7 @@ export const Contact = () => {
   }
   const handleClick = (e) => {
     e.preventDefault();
-    // sendMail();
-    axios.post('https://apygwgdqj4.execute-api.ap-northeast-1.amazonaws.com/v1', {
-      fullName: fullName,
-      company: company,
-      mail: mail,
-      message: message,
-    })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+    sendMail();
   };
 
   // 必須項目
@@ -61,39 +48,39 @@ export const Contact = () => {
     <SContainer>
       <STitle>Contact</STitle>
       <SForm>
-        <SInput
-          type="text"
-          value={fullName}
-          placeholder='お名前'
-          onChange={(e) => setFullName(e.target.value)}
-        />
-        <SInput
-          type="text"
-          required
-          value={company}
-          placeholder='会社名'
-          onChange={(e) => setCompany(e.target.value)}
-        />
-        <SInput
-          type="email"
-          value={mail}
-          placeholder='メールアドレス'
-          onChange={(e) => setMail(e.target.value)}
-        />
-        <STextarea
-          type="text"
-          rows="10"
-          value={message}
-          placeholder='お問い合わせ内容を入力してください'
-          onChange={(e) => setMessage(e.target.value)}
-        />
-        <SButton
-          onClick={handleClick}
-          disabled={disableSend}
-        >
-          お問い合わせを送信する
-        </SButton>
-      </SForm>
+          <SInput
+            type="text"
+            value={fullName}
+            placeholder='お名前'
+            onChange={(e) => setFullName(e.target.value)}
+          />
+          <SInput
+            type="text"
+            required
+            value={company}
+            placeholder='会社名'
+            onChange={(e) => setCompany(e.target.value)}
+          />
+          <SInput
+            type="email"
+            value={mail}
+            placeholder='メールアドレス'
+            onChange={(e) => setMail(e.target.value)}
+          />
+          <STextarea
+            type="text"
+            rows="10"
+            value={message}
+            placeholder='お問い合わせ内容を入力してください'
+            onChange={(e) => setMessage(e.target.value)}
+          />
+          <SButton
+            onClick={handleClick}
+            disabled={disableSend}
+            >
+            お問い合わせを送信する
+          </SButton>
+        </SForm>
     </SContainer>
   );
 }
