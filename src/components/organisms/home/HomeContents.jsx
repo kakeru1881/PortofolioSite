@@ -40,8 +40,8 @@ const SContentsContainer = styled.div`
   background-size:  cover;
   background-repeat: no-repeat;
   ${media.lessThan("small")`
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
   `}
  :nth-of-type(1) {
   margin: 10px auto 0 10px;
@@ -75,7 +75,7 @@ const Button = styled.div`
 ${media.lessThan("small")`
  transform: translate(50%, -50%) ;
     width: 50%;
-    height: 50%;
+    height: 20%;
   `}
 `
 
@@ -125,9 +125,9 @@ const SContentExplain = styled.p`
     background:black;
   }
   ${media.lessThan("small")`
-    font-size: 4px;
+    font-size: 10px;
     width: auto;
     height: aut;
-    transform: translate(110%, -110%) ;
+    transform: translate(100%, -160%) ;
   `}
 `
