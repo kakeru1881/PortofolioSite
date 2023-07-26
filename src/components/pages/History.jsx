@@ -10,12 +10,12 @@ const step = [{
   {
     title: 'サーバーセキュリティ',
     startDate: '2022/2',
-    content:`Cloud Security (CSPM)構築/導入/運用、EDR構築/導入/運用脆弱性診断。`,
+    content:`Cloud Security (CSPM)構築/導入/運用、EDR構築/導入/運用脆弱性診断`,
   },
   {
     title: 'Web制作',
     startDate: '2023/8',
-    content:`企画制作及びインターネットマーケティング、LP作成/運用。`,
+    content:`企画制作及びインターネットマーケティング、LP作成/運用`,
   },
  
 ]
