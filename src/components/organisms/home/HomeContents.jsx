@@ -76,9 +76,9 @@ const SContentsContainer = styled.div`
 `
 const Button = styled.div`
 ${media.lessThan("small")`
- transform: translate(50%, -50%) ;
-    width: 50%;
-    height: 20%;
+ transform: translate(100%, -20%) ;
+    width: 10%;
+    height: 10%;
   `}
 `
 
