@@ -33,7 +33,7 @@ const SContainer = styled.ul`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: fit-content;
+  width: 100%;
   max-width: 100%;
   cursor: pointer;
 `

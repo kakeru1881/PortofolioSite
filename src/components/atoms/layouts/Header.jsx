@@ -122,16 +122,3 @@ const SHeader = styled.header`
   position: relative;
   z-index: 1;
 `
-
-
-// ${media.lessThan("medium")`
-// /* screen width is less than 768px (medium) */
-// `}
-
-// ${media.between("medium", "large")`
-// /* screen width is between 768px (medium) and 1170px (large) */
-// `}
-
-// ${media.greaterThan("large")`
-// /* screen width is greater than 1170px (large) */
-// `}

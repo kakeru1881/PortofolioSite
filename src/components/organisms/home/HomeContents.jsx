@@ -37,17 +37,15 @@ const SContentsContainer = styled.div`
   position: relative;
   background-size:  cover;
   background-repeat: no-repeat;
-  
+  ${media.lessThan("small")`
+    width: 50%;
+    height: 50%;
+  `}
  :nth-of-type(1) {
   margin: 10px auto 0 10px;
   background-image: url('${window.location.origin}/img/history.jpg');
   filter: grayscale(80%);
 
-    ${media.lessThan("small")`
-    width: 50%;
-    height: 50%;
-    background-color:  red;
-  `}
       :hover{
         filter: blur();
     } 
@@ -113,6 +111,10 @@ const SContentExplain = styled.p`
   ${SContentsContainer}:hover & {
     color:white;
     background:black;
-
+    ${media.lessThan("small")`
+    width: 50%;
+    height: 50%;
+    transform: translate(60%, -60%) ;
+  `}
   }
 `
