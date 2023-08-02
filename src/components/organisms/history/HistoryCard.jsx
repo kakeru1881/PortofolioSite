@@ -41,11 +41,7 @@ const SContainer = styled.div`
     position: absolute;
     bottom: 0;
   }
-  ${media.lessThan("small")`
-    font-size : 7px;
-    width: 50%;
-    height: 50%;
-  `}
+
 
   ${media.greaterThan("large")`
     max-width: 500px;
@@ -76,7 +72,7 @@ const STitle = styled.h3`
 `
 
 const SStartDate = styled.p`
-  color: #fff;
+  color: black;
   display: none;
   position: absolute;
   margin: 58px 0 0 0;
