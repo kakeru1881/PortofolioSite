@@ -12,7 +12,7 @@ export const Header = (props) => {
   return (
     <>
       <SHeader>
-        <IconHeader></IconHeader>
+        {/* <IconHeader></IconHeader> */}
         <SLogo to="/"><SLogoTitle>Portfolio Site</SLogoTitle></SLogo>
         {showMenu ? (
           <SNav>
@@ -113,7 +113,7 @@ const SLine3 = styled(SLines)`
 `
 
 const SHeader = styled.header`
-  height: 90px;
+  height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
